@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+hooks:
+  BeforeInstall:
+    - location: scripts/test.sh
+    - location: scripts/test.sh
+  AfterInstall:
+    - location: scripts/test.sh
+      timeout: 180
+  ApplicationStart:
+    - location: scripts/test.sh
+      timeout: 3600
+  ValidateService:
+    - location: scripts/test.sh
+      timeout: 3600
