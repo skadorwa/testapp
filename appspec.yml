@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 hooks:
   BeforeInstall:
-    - location: test.sh
+    - location: installhttpd.sh
     - location: test.sh
   AfterInstall:
     - location: test.sh
