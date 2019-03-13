@@ -2,10 +2,9 @@ version: 0.0
 os: linux
 hooks:
   BeforeInstall:
-    - location: installhttpd.sh
-    - location: test.sh
+    - location: installmaven.sh
   AfterInstall:
-    - location: test.sh
+    - location: build.sh
       timeout: 180
   ApplicationStart:
     - location: test.sh
